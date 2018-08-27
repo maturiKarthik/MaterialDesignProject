@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:src="@drawable/wwf"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+<android.support.design.widget.TextInputLayout
+    style="@style/Widget.Shrine.TextInputLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/userName"
+        android:hint="Enter your Name"
+        android:textAppearance="@style/TextAppearance.Shrine.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+</android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        style="@style/Widget.Shrine.TextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/userPassword"
+            android:hint="Enter your Password"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/SignIn"
+            style="@style/Widget.Shrine.Button.TextButton"
+            android:layout_width="149dp"
+            android:layout_height="wrap_content"
+            android:text="SignIn" />
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/cancel"
+            style="@style/Widget.Shrine.Button.TextButton"
+            android:layout_width="153dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="42dp"
+            android:text="Cancel" />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
